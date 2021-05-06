@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    background-color: white;
+    /* position: fixed; */
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: grey;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #e1e1fd;
+    color: blue !important;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #e1e1fd;
+    color: blue !important;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.order-history-section{
+  border-radius: 10px;
+  background-color: white;
+
+}
+#star{
+  color: yellow;
+}
+.order-history{
+  background-color: #f7f7f0;
+}
+.nav-item .active{
+  background-color: white !important;
+  color: red !important;
+  border-radius: 20px;
+}
+.nav-item{
+  background-color: white;
+  border-radius: 10px;
+}
+.nav-link{
+  color: grey;
+}
+.right-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-section{
+  display: flex;
+  justify-content: space-around;
+}
+.left-section h6{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.left-section p{
+  margin-bottom: 0.6rem;
+}
+#order-history-div{
+  background-color: white;
+  height: 100vh;
+  border-radius: 12px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.input-group-text,.custom-select{
+  background-color: white;
+  border: none;
+}
+.restaurant-name{
+  width: 20%;
+  margin-right: 40px;
+  border-radius: 3%;
+}
